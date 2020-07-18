@@ -1,0 +1,102 @@
+include _head
+include _variables
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    +head('Hyundai Grand i10| Giá Xe Hyundai Grand I10 - Hyundai Giải Phóng')
+    block head
+  body
+    // header
+    header.header
+      //logo
+      .header__logo
+        .container.logo
+          .row
+            .col-md-3.header__logo-left
+              img(src="img/hyundai-logo.png")
+            .col-md-7.header__banner
+              ul.nav
+                li.nav__item
+                  a.nav__link(href='#') Giới thiệu
+                li.nav__item
+                  a.nav__link(href='#') Sản phẩm
+                li.nav__item
+                  a.nav__link(href='#') Tin tức
+                li.nav__item
+                  a.nav__link(href='#') Dịch vụ
+                li.nav__item
+                  a.nav__link(href='#') Đăng ký lái thử
+                li.nav__item
+                  a.nav__link(href='#') Mua xe
+                li.nav__item
+                  a.nav__link(href='#') Liên hệ
+            .col-md-2.header__logo-right
+              img(src="img/daily-logo.png")
+    //absolute content
+    .link
+      a(href="https://www.youtube.com/")
+        img.link__youtube(src="img/youtube.svg", alt="Youtube")
+      a(href="https://www.facebook.com/")
+        img.link__facebook(src="img/facebook.svg", alt="Facebook")
+    .phone
+      img(src="img/phone-ring.png")
+      span 1900 988 978
+    .registerbook
+      .register
+        a(href="#")
+          p Đăng ký lái thử
+      .book
+        a(href="#")
+          p Đặt lịch bảo dưỡng
+    .back
+      img(src="img/back_to_top_1.png")
+    block main
+    //footer
+    .footer
+      .footer__content
+        img(src="img/daily-logo-footer.png", alt="Logo")
+        .content
+          p
+            |Hyundai An Phú - Đại lý ủy quyền chính thức của Hyundai Thành Công là địa điểm trưng bày các dòng xe mới nhất của Hyundai.
+            br
+            br
+            |Tọa lạc tại trung tâm Thành Phố Hồ Chí Minh với các showroom chuẩn 1S, 2S hiện đại, cùng đội ngũ chuyên viên tư vấn giàu kinh nghiệm.
+            br
+            br
+            |Hyundai An Phú mang sứ mệnh phục vụ khách hàng trên Toàn quốc, giúp khách hàng có những trải nghiệm ấn tượng về sản phẩm - dịch vụ cao cấp của chúng tôi.
+            br
+            br
+            |Liên hệ ngay để được tư vấn và nhận các chương trình hấp dẫn
+      .footer__image
+        p hình ảnh
+        img(src="img/181218_Gioi-thieu-showroom.jpg", alt="Showroom")
+      .footer__blog
+        p.title bài viết gần đây
+        each index in listBlog
+          .blog
+            a(href="#").image
+              img(src="img/" + index.img)
+            a(href="#").content
+              span= index.content
+          p.time= index.time
+      .footer__facebook
+        p facebook
+    .footer__address
+      .address
+        img(src="img/icon-market.svg")
+        span Showroom 2S: 1052 Nguyễn Văn Linh, P.Tân Phong, Quận 7, TP.HCM
+      .address
+        img(src="img/icon-market.svg")
+        span Showroom 1S: 5A Nguyễn Thị Minh Khai, P.Bến Nghé, Quận 1, TP.HCM
+      .email
+        img(src="img/icon-contact.svg")
+        a(href="#")
+          span info@anphuhyundai.com.vn
+    .copyright
+      p COPYRIGHT ©IDOCNET 2018
+    // script
+    script(src='js/master.js')
+    script(src='js/jquery-3.4.1.min.js')
+    script(src='js/slick.min.js')
+    // end script

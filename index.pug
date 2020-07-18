@@ -1,0 +1,44 @@
+extend pug/_layout
+
+block main
+  section.maincontent
+    .tab.js-tab
+      .tab__item
+        a.tab__link.tab__active(href='#', data-tab='travel-car')
+          img(src="img/pro-cate-1.png")
+          span Xe du lịch
+      .tab__item
+        a.tab__link(href='#', data-tab='suv-car')
+          img(src="img/pro-cate-1.png")
+          span Xe SUV
+      .tab__item
+        a.tab__link(href='#', data-tab='commerce-car')
+          img(src="img/pro-cate-1.png")
+          span Xe thương mại
+      .tab__item
+        a.tab__link(href='#', data-tab='limousine-car')
+          img(src="img/pro-cate-1.png")
+          span Limousine An Phú
+    #travel-car.listtravel.car__main.js-tab-car
+        each index in listTravelCar
+          .listtravel__item
+            a.listtravel__link
+              img(src='img/' + index.img)
+              span= index.name
+    #suv-car.listtravel.car__main.js-tab-car
+        each index in listSUVCar
+          .listtravel__item
+            a.listtravel__link
+              img(src='img/' + index.img)
+              span= index.name
+    #commerce-car.listtravel.car__main.js-tab-car
+        each index in listCommerceCar
+          .listtravel__item
+            a.listtravel__link
+              img(src='img/' + index.img)
+              span= index.name
+    #limousine-car.listtravel.car__main.js-tab-car
+      .listtravel__item
+        a.listtravel__link
+          img(src='img/limousine.png')
+          span Limousine An Phú

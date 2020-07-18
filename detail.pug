@@ -1,0 +1,84 @@
+extend pug/_layout
+
+block main
+  section.highlight
+    h1.highlight__title Nổi bật
+    p.highlight__content1
+      |Không gian rộng rãi trong một thiết kế nhỏ gọn
+    p.highlight__content2
+      a.highlight__content2--link(href="#") Grand i10
+      |&nbsp;sở hữu kích thước lớn hàng đầu phân khúc, đem đến một không gian thoải mái tối đa cũng như phong cách năng động cho chủ nhân. Bên cạnh đó, những công nghệ hàng đầu được trang bị trên xe giúp cho trải nghiệm lái xe cang trở nên thú vị
+    .highlight__grid
+      .container
+        .row
+          .col-md-4.img
+            img(src="img/nb1.jpg")
+          .col-md-4.content
+            h2 thiết kế ấn tượng
+            p
+              a(href="#") Grand i10
+              |&nbsp;gây án tượng bới vẻ ngoài mạnh mẽ, thể thao hơn với điểm nhấn là lưới tản nhiệt được thiết kế mới phong cách Thác nước cùng dải đèn LED chạy ban ngày Daytime Running Lights (DRL).
+          .col-md-4.img
+            img(src="img/nb2.jpg")
+    .highlight__outside
+      img(src="img/ngoaithat1.png", alt="Outside")
+      .block1
+        img(src="img/nb4.jpg")
+        .block1__text
+          span Phong cách thể thao với lưới tản nhiệt được thiết kế mới theo phong cách "Thác nước"
+      .block2
+        img(src="img/nb5.jpg")
+        .block2__text
+          span Phong cách thể thao không thể nhầm lẫn
+    .highlight__image
+      img(src="img/nb6.jpg").image1
+      img(src="img/nb7.jpg")
+    .highlight__content
+      .highlight__content--left
+        h3 Không gian chứa đồ rộng rãi
+        p
+          a(href="#") Grand i10
+          |&nbsp;sở hữu không gian chứa đồ lớn nhất phân khúc, giúp bạn chở được tối đa số hành lí cho những chuyến đi cùng với cả gia đình.
+      .highlight__content--right
+        h3 An toàn tối đa
+        p Grand i10 được trang bị 2 túi khí cho ghế lái và ghế phụ, đảm bảo an toàn tối đa cho hành khách trong trường hợp xảy ra va chạm.
+  section.outside
+    h1 Ngoại thất
+    h2 Ấn tượng từ cái nhìn đầu tiên
+    p.outside__content Mọi đường nét trên&nbsp;
+      a(href="#") Grand i10
+      |&nbsp;đều để lại ấn tượng về sự cá tính, thời trang và phong cách.
+    img(src="img/ngoaithat1.png")
+    .outside__image
+      each index in listOutsideImage1
+        .outside__image--list
+          img(src="img/" + index.img)
+          .text
+            p= index.title
+            span= index.content
+    h2 Chiếc xe đô thị hàng đầu
+    p Sở hữu đường nét thiết kế mạnh mẽ và đậm nét cá tính, Grand i10 2017 được nâng tầm đẳng cấp của một chiếc xe đô thị hàng đầu.
+    img(src="img/ngoaithat2.png")
+    .outside__image
+      each index in listOutsideImage2
+        .outside__image--list
+          img(src="img/" + index.img)
+          .text
+            p= index.title
+            span= index.content
+    h2 Chiếc xe đô thị hàng đầu
+    p Sở hữu đường nét thiết kế mạnh mẽ và đậm nét cá tính, Grand i10 2017 được nâng tầm đẳng cấp của một chiếc xe đô thị hàng đầu.
+    img(src="img/ngoaithat3.png")
+    .outside__image
+      each index in listOutsideImage3
+        .outside__image--list
+          img(src="img/" + index.img)
+          .text
+            p= index.title
+            span= index.content
+    .outside__list
+      each index in listOutsideImage4
+        .outside__list--block
+          img(src="img/" + index.img)
+          p= index.title
+          span= index.content

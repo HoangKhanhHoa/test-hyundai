@@ -1,0 +1,486 @@
+@font-face {
+  font-family: "Ultimate Serial Light Regular";
+  src: url("../font/ultimate-serial-light-regular.ttf");
+}
+@font-face {
+  font-family: "Volkswagen Serial Light Regular";
+  src: url("../font/volkswagen-serial-light-regular.ttf");
+}
+@media (min-width: 1200px) {
+  .maincontent {
+    width: 68%;
+    margin-left: 16%;
+    margin-top: 85px;
+  }
+
+  .tab {
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+  }
+  .tab__item {
+    width: 25%;
+    padding-left: 4px;
+  }
+  .tab__item a {
+    color: #3127cc;
+  }
+  .tab__item:hover {
+    color: #1d5fcb;
+  }
+  .tab__link {
+    margin-right: 1%;
+    cursor: pointer;
+  }
+  .tab img {
+    padding-right: 5px;
+  }
+
+  .listtravel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .listtravel__item {
+    width: 25%;
+    display: block;
+    position: relative;
+    padding-top: 25.25%;
+  }
+  .listtravel__item a:hover img {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  .listtravel__link {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .listtravel__link img {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .highlight {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .highlight__title {
+    text-transform: uppercase;
+    color: #0E528B;
+  }
+  .highlight h1 {
+    border-bottom: 3px solid #0E528B;
+    margin-left: 43%;
+    width: 14%;
+    padding-bottom: 11px;
+  }
+  .highlight__content1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-top: 80px;
+  }
+  .highlight__content2 {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  .highlight__grid .img img {
+    width: 100%;
+  }
+  .highlight__grid .content {
+    padding-top: 52px;
+  }
+  .highlight__grid .content h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .highlight__outside img {
+    width: 72%;
+    margin-top: 25px;
+  }
+  .highlight__outside .block1 {
+    position: relative;
+  }
+  .highlight__outside .block1 img {
+    width: 100%;
+  }
+  .highlight__outside .block1__text {
+    position: absolute;
+    bottom: 175px;
+    right: 20px;
+    color: #fff;
+    width: 40%;
+    font-size: 25px;
+  }
+  .highlight__outside .block2 {
+    position: relative;
+  }
+  .highlight__outside .block2 img {
+    width: 100%;
+  }
+  .highlight__outside .block2__text {
+    position: absolute;
+    color: #fff;
+    width: 40%;
+    font-size: 25px;
+    bottom: 175px;
+    left: 25px;
+  }
+  .highlight__image {
+    width: 100%;
+  }
+  .highlight__image img {
+    width: 48%;
+  }
+  .highlight__image .image1 {
+    margin-right: 4%;
+  }
+  .highlight__content {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    padding: 0 2%;
+  }
+  .highlight__content--left {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .highlight__content--left h3 {
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
+  .highlight__content--right {
+    width: 48%;
+  }
+  .highlight__content--right h3 {
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
+
+  .outside {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .outside h1 {
+    border-bottom: 3px solid #0E528B;
+    margin-left: 42%;
+    width: 19%;
+    padding-bottom: 11px;
+    text-transform: uppercase;
+    color: #0E528B;
+  }
+  .outside h2 {
+    text-transform: uppercase;
+  }
+  .outside__content {
+    padding-bottom: 20px;
+  }
+  .outside__image {
+    margin-left: 12%;
+    margin-right: 8%;
+    width: 88%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .outside__image--list {
+    width: 41%;
+    margin-right: 4%;
+    position: relative;
+    padding-bottom: 45px;
+  }
+  .outside__image--list img {
+    width: 100%;
+  }
+  .outside__image--list .text {
+    position: absolute;
+    top: 30px;
+    text-align: left;
+    left: 20px;
+    right: 20px;
+  }
+  .outside__image--list .text p {
+    color: #fff;
+    font-size: 18px;
+  }
+  .outside__image--list .text span {
+    color: #adadad;
+  }
+  .outside__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12%;
+  }
+  .outside__list--block {
+    width: 27%;
+    margin-right: 2%;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .outside__list--block img {
+    width: 100%;
+  }
+  .outside__list--block p {
+    margin-top: 19px;
+  }
+  .outside__list--block span {
+    color: #5f5a5a;
+  }
+}
+body {
+  font-size: 15px;
+  font-family: "Volkswagen Serial Light Regular";
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1284px;
+  }
+
+  .logo {
+    margin: 9px 3%;
+  }
+
+  .header__logo {
+    border-bottom: 1px solid #cecbcb;
+  }
+  .header__logo-left img {
+    width: 100%;
+  }
+  .header__logo-right img {
+    width: 100%;
+  }
+  .header__banner {
+    margin-top: 10px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+  .nav__item {
+    width: 13%;
+    text-align: center;
+  }
+  .nav__item:nth-child(5) {
+    width: 17%;
+  }
+  .nav__link {
+    color: black;
+    font-weight: bolder;
+  }
+  .nav__link:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  .link {
+    display: grid;
+    border: 1px solid #fff;
+    width: 52px;
+    margin-left: 1%;
+    padding: 0.3%;
+    background: #fff;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20%;
+    z-index: 999;
+  }
+  .link a:hover {
+    transform: scale(1.5);
+  }
+  .link__youtube {
+    width: 40px;
+    padding-bottom: 15px;
+  }
+  .link__facebook {
+    width: 40px;
+  }
+
+  .phone {
+    border: 1px solid #fff;
+    width: 198px;
+    color: #fff;
+    background-color: #e60b0b;
+    font-size: 20px;
+    border-radius: 28px;
+    position: fixed;
+    bottom: 7%;
+    margin-left: 2%;
+    z-index: 999;
+  }
+  .phone img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 20%;
+    margin: 6px;
+  }
+
+  .registerbook {
+    right: 0;
+    position: fixed;
+    bottom: 40%;
+    z-index: 999;
+  }
+  .registerbook a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .registerbook a:hover {
+    color: black;
+  }
+  .registerbook .register {
+    background-color: #f33232;
+    width: 212px;
+    text-align: center;
+    font-size: 17px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .registerbook .register p {
+    padding: 7px 0;
+  }
+  .registerbook .book {
+    background-color: #f33232;
+    width: 212px;
+    text-align: center;
+    font-size: 17px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+  }
+  .registerbook .book p {
+    padding: 7px 0;
+  }
+
+  .back {
+    position: fixed;
+    right: 164px;
+    bottom: 35px;
+    opacity: 0.9;
+  }
+  .back img {
+    width: 70px;
+  }
+
+  .footer {
+    background-color: #272D3A;
+    width: 100%;
+    padding: 50px 5%;
+    display: flex;
+  }
+  .footer__content {
+    width: 24%;
+    margin-right: 3%;
+  }
+  .footer__content img {
+    width: 100%;
+  }
+  .footer__content .content p {
+    margin-top: 22px;
+    color: #fff;
+    text-align: justify;
+  }
+  .footer__image {
+    width: 20%;
+    margin-right: 3%;
+    padding-top: 6px;
+  }
+  .footer__image p {
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 1px solid;
+    padding-bottom: 17px;
+  }
+  .footer__image img {
+    width: 30%;
+    padding-top: 9px;
+  }
+  .footer__blog {
+    width: 23%;
+    margin-right: 3%;
+    padding-top: 6px;
+  }
+  .footer__blog .title {
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 1px solid;
+    padding-bottom: 17px;
+  }
+  .footer__blog .blog {
+    width: 100%;
+    display: flex;
+  }
+  .footer__blog .blog a:hover {
+    text-decoration: none;
+  }
+  .footer__blog .blog .image {
+    width: 40%;
+  }
+  .footer__blog .blog .image img {
+    width: 100%;
+  }
+  .footer__blog .blog .content {
+    color: #fff;
+    padding-left: 25px;
+    text-transform: uppercase;
+  }
+  .footer__blog .time {
+    padding-left: 95px;
+    color: #fff;
+  }
+  .footer__facebook {
+    width: 22%;
+    padding-top: 6px;
+  }
+  .footer__facebook p {
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 1px solid;
+    padding-bottom: 17px;
+  }
+  .footer__address {
+    background-color: #272D3A;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding: 50px 5%;
+    display: flex;
+    color: #fff;
+  }
+  .footer__address .address {
+    width: 30%;
+    margin-right: 4%;
+  }
+  .footer__address .address img {
+    width: 5%;
+    margin-right: 30px;
+  }
+  .footer__address .email {
+    width: 30%;
+  }
+  .footer__address .email img {
+    width: 10%;
+    margin-right: 30px;
+  }
+  .footer__address .email a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .copyright {
+    background-color: #272D3A;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
